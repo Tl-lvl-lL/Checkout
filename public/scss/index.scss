@@ -1,0 +1,49 @@
+
+//Variables
+
+$_display:flex;
+$_justify-content: center;
+$_align-items: center;
+
+$mapSizeFonts:("small":.75em,"medium":1em,"big":2em);
+
+$mapSizeScreen:("small": 480px,"medium":1370px,"big": 3840px);
+%somethingWithText{
+    font-family:Verdana,sans-serif;
+    color:rgb(153, 153, 153);
+    font-size:.75em;
+}
+
+.#{$_display}{
+    display: $_display;
+}
+
+@each $c,$i in $mapSizeScreen {
+    @if($c == small and $i == 480px){
+        
+        @each $k,$v in $mapSizeFonts {
+            @if($k == small and $v == .75em){
+
+                @media screen and (max-width: $i){
+                    a{
+                        font-size: $v ;
+                    }
+                }
+
+            }
+        }
+
+    }
+
+}   
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+
+}
+

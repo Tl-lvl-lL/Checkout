@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form || Blogo</title>
+    <link rel="stylesheet" href="../public/css/form.css">
+</head>
+
+<body>
+    <div class="content">
+
+        <h1>Settings</h1>
+
+        <form action="#" method="get">
+            <fieldset class=cuenta>
+                <legend class=Account>Account</legend>
+                <label for="name">Full Name</label>
+                <input type="text" name="Name" id="name">
+                <label for="email">Email Address</label>
+                <input type="text" name="Email" id="email">
+                <label for="phone">Phone Number</label>
+                <input type="text" name="Phone" id="phone">
+            </fieldset>
+            <fieldset class=pago>
+                <legend class=Billing>Billing</legend>
+                <label for="plan">Plan</label>
+                <input type="text" name="Plan" id="plan">
+                <label for="unittype">Billing Interval</label>
+                <select id="unittype" name="unittype">
+                    <option value="1"> Monthly </option>
+                    <option value="2"> Yearly </option>
+                </select>
+            </fieldset>
+            <fieldset class=direccion>
+                <legend class="Business-Address">Business Address</legend>
+                <label for="address">Street Address</label>
+                <input type="text" name="Address" id="address">
+                <label for="city">City</label>
+                <input type="text" name="Address" id="address">
+                <label for="province">Province</label>
+                <select id="province" name="Province">
+                    <option value="1"> Chiclayo </option>
+                    <option value="2"> Ferreñafe</option>
+                    <option value="2"> Lambayeque</option>
+                </select>
+                <label for="city">Postal Code</label>
+                <input type="text" name="Address" id="address">
+                <label for="unittype">Country</label>
+                <select id="unittype" name="unittype">
+                    <option value="1"> Perú </option>
+                    <option value="2"> Colombia </option>
+                    <option value="2"> Argentina </option>
+                </select>
+            </fieldset>
+            <fieldset class=pago>
+                <legend class=Billing>Privacity</legend>
+                <label for="name">Password</label>
+                <input type="text" name="Name" id="name">
+                <label for="email">Change Password</label>
+                <input type="text" name="Email" id="email">
+            </fieldset>
+            <button class=send type="submit">UPDATE</button>
+            <button class=cancel type="reset">CANCEL</button>
+
+
+        </form>
+
+    </div>
+</body>
+
+</html>

@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "Blog Design",
   "main": "index.html",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "scripts":{
+    "start": "node-sass --watch public/scss/index.scss --output public/css"
   },
   "author": "Me",
   "license": "MIT",

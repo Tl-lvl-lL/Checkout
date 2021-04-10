@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* text-decoration: none; */
+}
+.content{
+    display:grid;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+h1{
+    display:grid;
+    text-align: center;
+    font-size:2em;
+    font-weight:lighter;
+    color:rgb(22, 22, 22);
+    justify-content:start;
+    align-items:center;
+}
+
+form{
+    display:grid;
+    grid-template-rows: repeat(5,1fr);
+}
+fieldset{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+legend{
+    font-size:0.5em;
+    font-weight: bolder;
+    color:rgb(0, 0, 0);
+    
+}
+/* -------------- */
+.cuenta{
+    grid-template-rows: repeat(6,1fr);
+}
+.Account{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row: span 6;
+}
+/* ------------- */
+.pago{
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    
+}
+.Billing{
+    grid-column: 1/ 2;
+    grid-row: span 2;
+}
+/* ------------- */
+.direccion{
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(6,1fr);
+}
+.Business-Address{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: span 6;
+
+}
+
+
+
+
+
+
+
+
+
+label{
+    font-size:0.5em;
+    font-weight:lighter;
+    color:rgb(25, 25, 25);
+}
+input{
+    background-color: rgb(230,230,230);
+    border: lightgray 0.5px solid;
+    border-radius:1px;
+}
+select{
+    background-color: rgb(230,230,230);
+    border: lightgray 0.5px solid;
+    border-radius:1px;
+    color:rgb(100, 100, 100);
+    font-family: 'sans-serif';
+    /*
+    Review This 
+    font-size:1em;
+    height:2em;
+    */
+}
+option{
+    background-color: rgb(230,230,230);
+    border: lightgray 0.5px solid;
+    border-radius:1px;
+    color:rgb(100, 100, 100);
+    font-family: 'sans-serif';
+    /* 
+    Review This
+
+    font-size:0.65em;
+    height:6em; 
+    
+    */
+
+}
+button{
+    font-weight: bold;
+    font-size:.5em;
+    padding:.25em;
+    width: 6em;
+    height:2em;
+    border:none;
+    border-radius:5px;
+}
+
+.send{
+    background-color:rgb(0, 125, 163);
+    color:white;
+}
+.cancel{
+    background-color:rgb(243, 243, 243);
+    color:rgb(168, 168, 168);
+}
